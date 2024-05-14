@@ -4,7 +4,7 @@ const cors = require("cors");
 // const { connectedToMongoDB } = require("./configuration/dbConfig");
 const userRoutes = require("./src/routes/userRoute");
 const app = express();
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 // const path = require('path');
 

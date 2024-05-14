@@ -8,10 +8,11 @@ const mongoose = require("mongoose");
 //         console.log(`MongoDB connection error: ${error}`);
 //     }
 // }
-
+//abx
 // module.exports = { mongoose, connectedToMongoDB};
 
-mongoose.connect("mongodb://localhost:27017/employee_db", {
+mongoose.connect("mongodb+srv://mrudhulashrimanikantan:mrudhulashrimanikantan@cluster1.gldpvtu.mongodb.net/employeedb", {
+    useNewUrlParser: true, useUnifiedTopology: true 
 });
 
 mongoose.connection.on("connected", () => {
@@ -22,4 +23,4 @@ mongoose.connection.on("error", (err) => {
     console.error(`MongoDB connection error: ${err}`);
 });
 
-module.exports = mongoose;
+module.exports = mongoose; 

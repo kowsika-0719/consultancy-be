@@ -2,7 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 // const { connectedToMongoDB } = require("./configuration/dbConfig");
-const userRoutes = require("./routes/userRoute");
+const userRoutes = require("./src/routes/userRoute");
 const app = express();
 const port = process.env.port || 5000;
 
